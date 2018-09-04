@@ -19,14 +19,14 @@ function RenkAyarla()
       var sunucu = client.guilds.get('480044387540271104');
       var role = sunucu.roles.get(config.role_id);
       role.setColor(renkler[renk_pos]);
-      if(++renk_pos >= renk_sayisi ) renk_pos=0;
+      if (++renk_pos >= renk_sayisi) renk_pos = 0;
 }
 
 function RenkleriOlustur()
 {
-      var max_renk = 255 * 255 *255;
+      var max_renk = 255 * 255 * 255;
       var kat_sayi = max_renk / renk_sayisi;
-      for(var i=0; i<max_renk; i+=kat_sayi)
+      for (var i = 0; i < max_renk; i += kat_sayi)
       {
             var genelde_e1 = '#' + i.toString(16);
             renkler.append(genelde_e1);
