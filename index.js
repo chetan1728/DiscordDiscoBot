@@ -4,7 +4,7 @@ const config = require('./config.js');
 
 
 var renk_sayisi = 12;
-var renkler = [];
+var renkler = [''];
 var renk_pos = 0;
 
 
@@ -24,6 +24,7 @@ function RenkAyarla()
 
 function RenkleriOlustur()
 {
+      renkler.pop();
       var max_renk = 255 * 255 * 255;
       var kat_sayi = max_renk / renk_sayisi;
       for (var i = 0; i < max_renk; i += kat_sayi)
