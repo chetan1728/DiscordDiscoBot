@@ -71,4 +71,4 @@ function hsvToRgb(h, s, v)
 
 RenkleriOlustur();
 
-client.login(config.token);
+client.login(config.Token);
